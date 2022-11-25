@@ -1,5 +1,5 @@
 import React from 'react';
-import { AuthProvider, useAuthContext } from '../contexts/AuthContext';
+import { AuthProvider } from '../contexts/AuthContext';
 import { Route, Routes } from 'react-router-dom';
 import Dashboard from './Home';
 import SigninPage from '../pages/SigninPage';
