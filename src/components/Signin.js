@@ -1,6 +1,4 @@
 import React, { useRef, useState } from "react";
-import{  FaLock, FaUser } from 'react-icons/fa';
-import { MdAlternateEmail } from 'react-icons/md';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuthContext } from "../contexts/AuthContext";
 
