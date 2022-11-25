@@ -1,0 +1,576 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* .signin {
+    background-image: url('~/img/background-homepage.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.signin-container, .signup-container {
+    margin-top: 10%;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 0px 50px 50px 0px;
+    padding-right: 20px;
+    padding-top: 20px;
+    height: 400px;
+    background: grey;
+}
+
+.signin-container h2, .signup-container h2 {
+    text-align: center;
+    font-weight: bolder;
+    color: #000000;
+    padding-bottom: 30px;
+    margin-top: 30px;
+}
+
+.signin-input-container, .register-input-container {
+    margin: 0 auto;
+    width: 50%;
+    margin-bottom: 3%;
+}
+
+.icon {
+    padding: 11px;
+    color: black;
+    min-width: 4%;
+    text-align: center;
+}
+
+.signin-input-container i, .register-input-container i{
+    position: absolute;
+}
+
+.signin-input-container input, .register-input-container input {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    border: 0;
+    border-radius: 10px;
+    outline: none;
+}
+
+.signin-input:focus, .signup-input:focus {
+    border: 2px solid rgb(201, 61, 201);
+}
+
+.signin-container button, .signup-container button {
+    margin-left: 25%;
+    margin-bottom: 3%;
+    width: 50%;
+    height: 40px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 10px;
+    background: linear-gradient(90.51deg, rgba(171, 129, 222, 0.7) 2.2%, #EE8FE4 87.81%);
+    color: #f9f9f9;
+    border: 0;
+    font-weight: bolder;
+}
+
+.signin-container p, .signup-container p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+  
+.auth-container p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+} */
+
+/* Sign in or Login Page */
+.container-main {
+    margin-top: 50px;
+}
+
+.card-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 70%;
+    height: 500px;
+    margin: 0 auto;
+    border-radius: 50px;
+}
+
+.tittle-login {
+    text-align: center;
+}
+
+.tittle-login h1 {
+    font-weight: bolder;
+    color: #000000;
+    padding-bottom: 30px;
+    margin-top: 30px;
+}
+
+/* blur desain */
+
+.blurr {
+    position: absolute;
+    width: 433px;
+    height: 405px;
+    left: 1091px;
+    top: -9px;
+    background: rgba(171, 129, 222, 0.35);
+    filter: blur(150px);
+}
+
+/* blur desain */
+
+.card-main .btn-back {
+    position: absolute;
+    width: 200%;
+    height: 20px;
+    left: 240px;
+    bottom: 630px;
+    font-size: 35px;
+}
+
+.card-main .left {
+    float: left;
+    width: 35%;
+    height: 500px;
+    background: rgba(171, 129, 222, 0.49);
+    border: 2px solid #FFFFFF;
+    border-radius: 50px 0px 0px 50px;
+    background-image: url(~/img/ibuanak-img.png);
+    background-position: right -50px top 2px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-main .btn-back a {
+    color: #000000;
+}
+
+
+.card-main .right {
+    float: right;
+    width: 65%;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+.formbox .form button, .formbox .form input {
+    border: 0;
+    width: 100%;
+    height: 60px;
+    background: transparent;
+    font-size: 16px;
+    outline: none;
+}
+
+.formbox .form {
+    margin: 0;
+    display: grid;
+    gap: 16px;
+    margin-left: 60px;
+    margin-right: 40px;
+}
+
+.textbox {
+    position: relative;
+    box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+}
+
+.textbox span {
+    position: absolute;
+    top: 54%;
+    translate: 0 -50%;
+    left: 2%;
+    font-size: 22px;
+    pointer-events: none;
+    color: rgb(255, 255, 255/96%);
+}
+
+.textbox input {
+    padding: 0 24px 0 36px;
+    border-bottom: 20x solid #2b3442;
+    color: rgb(255, 255, 255/96%);
+    height: 72px;
+}
+
+
+input:focus {
+    border-color: rgb(107, 61, 163);
+}
+
+:is(input:focus, input:valid) ~ span {
+    color: rgb(255, 255, 255/96%);
+}
+
+.textbox label {
+    position: absolute;
+    top: 50%;
+    left: 40px;
+    translate: 0 -50%;
+    color: rgb(255, 255, 255/40%);
+    pointer-events: none;
+    transition: 0.4s;
+}
+
+:is(input:focus, input:valid) ~ label {
+    translate: -40px -40px;
+    scale: 0.875;
+}
+
+input:focus ~  label {
+    color: rgb(70, 32, 117);
+}
+
+.formbox .form button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 0 24px;
+    border-radius: 6px;
+    background: linear-gradient(90.51deg, rgba(171, 129, 222, 0.7) 2.2%, #EE8FE4 87.81%);
+    color: #f9f9f9;
+    border: 0;
+    font-weight: 600;
+}
+
+.form #forgot{
+    text-align: right;
+    padding-right: 10px;
+    font-size: 13px;
+}
+
+.form p {
+    font-weight: bolder;
+}
+
+@media only screen and (max-width: 600px){
+    .card-main .btn-back {
+        left: 70px;
+        bottom: 740px;
+    }
+
+    .card-main .left {
+        height: 500px;
+        background: rgb(255, 255, 255);
+        border-radius: 50px 0px 0px 50px;
+    }
+    .card-main .right {
+        float: left;
+        width: 50%;
+        height: 400px;
+        box-sizing: border-box;
+    }
+
+    .formbox {
+        padding-right: 10px;
+    }
+
+    .tittle-login h1 {
+        position: absolute;
+        left: 100px;
+        right: 100px;
+    }
+
+    .textbox {
+        position: relative;
+        margin-bottom: 2px;
+        margin-left: 110px;
+        padding-left: 32px;
+    }
+    
+    .formbox .form {
+        position: absolute;
+        display: grid;
+        margin-left: 40px;
+        padding-top: 90px;
+        right: 40px;
+        font-size: 14px;
+    }
+
+    .textbox input {
+        padding: 0 120px 0 100px;
+    }
+
+    .formbox .form button {
+        position: absolute;
+        margin-top: 280px;
+        width: 70%;
+        margin-left: 110px;
+        font-size: 14px;
+    }
+
+    .formbox .form .reg-form {
+        position: absolute;
+        margin-top: 350px;
+        margin-left: 110px;
+    }
+}
+
+/* Sign up or Register Page */
+.container-main {
+    margin-top: 50px;
+}
+
+.card-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 70%;
+    height: 500px;
+    margin: 0 auto;
+    border-radius: 50px;
+}
+
+.tittle-register {
+    text-align: center;
+}
+
+.tittle-register h1 {
+    font-weight: bolder;
+    color: #000000;
+    margin-top: 30px;
+    font-size: 25px;
+}
+
+.tittle-register h4 {
+    color: #787878;
+    font-weight: lighter;
+    font-size: 14px;
+}
+
+/* blur desain */
+
+.blurr {
+    position: absolute;
+    width: 433px;
+    height: 405px;
+    left: 1091px;
+    top: -9px;
+    background: rgba(171, 129, 222, 0.35);
+    filter: blur(150px);
+}
+
+/* blur desain */
+
+.card-main .btn-back {
+    position: absolute;
+    width: 200%;
+    height: 20px;
+    left: 240px;
+    bottom: 630px;
+    font-size: 35px;
+}
+
+.card-main .btn-back a {
+    color: #000000;
+}
+
+.card-main .left {
+    float: left;
+    width: 35%;
+    height: 500px;
+    background: rgba(171, 129, 222, 0.49);
+    border: 2px solid #FFFFFF;
+    border-radius: 50px 0px 0px 50px;
+    background-image: url(~/img/ibuanak-img.png);
+    background-position: right -50px top 2px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-main .right {
+    float: right;
+    width: 65%;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+.formbox .form button, .formbox .form input {
+    border: 0;
+    width: 98%;
+    height: 60px;
+    background: transparent;
+    font-size: 16px;
+    outline: none;
+    margin-left: 10px;
+}
+
+.formbox .form {
+    margin: 0;
+    display: grid;
+    gap: 18px;
+    margin-left: 60px;
+    margin-right: 40px;
+}
+
+.textbox {
+    position: relative;
+    margin-bottom: 2px;
+    margin-left: 10px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+    padding: 0 20px;
+    height: 40px;
+}
+
+.textbox span {
+    position: absolute;
+    top: 54%;
+    translate: 0 -50%;
+    left: 2%;
+    font-size: 18px;
+    pointer-events: none;
+    color: rgb(255, 255, 255/96%);
+}
+
+.textbox input {
+    padding: 0 24px 18px 20px;
+    border-bottom: 20x solid #2b3442;
+    color: rgb(255, 255, 255/96%);
+    height: 72px;
+}
+
+input:focus {
+    border-color: rgb(107, 61, 163);
+}
+
+:is(input:focus, input:valid) ~ span {
+    color: rgb(255, 255, 255/96%);
+}
+
+.textbox label {
+    position: absolute;
+    top: 50%;
+    left: 40px;
+    translate: 0 -50%;
+    color: rgb(255, 255, 255/40%);
+    pointer-events: none;
+    transition: 0.4s;
+    font-size: 14px;
+}
+
+:is(input:focus, input:valid) ~ label {
+    translate: -40px -40px;
+    scale: 0.875;
+}
+
+input:focus ~  label {
+    color: rgb(70, 32, 117);
+}
+
+.formbox .form button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 0 24px;
+    border-radius: 6px;
+    background: linear-gradient(90.51deg, rgba(171, 129, 222, 0.7) 2.2%, #EE8FE4 87.81%);
+    color: #f9f9f9;
+    border: 0;
+    font-weight: 600;
+    height: 50px;
+}
+
+.formbox .form .reg-form {
+    margin-left: 10px;
+}
+
+.form #forgot a {
+    float: right;
+    font-size: 13px;
+}
+
+.form p {
+    font-weight: bolder;
+    font-size: 14px;
+}
+
+@media only screen and (max-width: 600px){
+    .card-main .btn-back {
+        left: 70px;
+        bottom: 740px;
+        font-size: 30px;
+    }
+
+    .card-main .left {
+        width: 0%;
+        height: 500px;
+        background: rgb(255, 255, 255);
+        border-radius: 50px 0px 0px 50px;
+    }
+    .card-main .right {
+        float: left;
+        width: 100%;
+        height: 400px;
+        box-sizing: border-box;
+    }
+
+    .formbox {
+        padding-right: 10px;
+    }
+
+    .tittle-register h1 {
+        position: absolute;
+        left: 100px;
+        right: 100px;
+        top: 110px;
+        font-size: 20px;
+    }
+
+    .tittle-register h4 {
+        margin-top: 10px;
+    }
+
+    .textbox {
+        position: relative;
+        margin-bottom: 2px;
+        margin-left: 110px;
+        padding-left: 32px;
+        width: 65%;
+    }
+    
+    .formbox .form {
+        position: absolute;
+        display: grid;
+        margin-left: 40px;
+        right: 10px;
+        font-size: 14px;
+    }
+
+    .textbox input {
+        padding: 0 120px 0 100px;
+    }
+
+    .formbox .form button {
+        position: absolute;
+        margin-top: 300px;
+        width: 65%;
+        margin-left: 110px;
+        font-size: 14px;
+    }
+
+    .formbox .form .reg-form {
+        position: absolute;
+        margin-top: 355px;
+        margin-left: 110px;
+        font-size: 13px;
+    }
+}
