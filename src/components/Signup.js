@@ -26,28 +26,28 @@ export default function Signup() {
   }
 
   return (
-    <div class="tittle-register">
+    <div className="tittle-register">
       <h1>Register</h1>
       {error && <p>{error}</p>}
       <h4>Let's Get Started! Please enter your details.</h4>
-      <div class="formbox">
-        <form onSubmit={onSubmitHandler} class="form">
-            <div class="textbox">
+      <div className="formbox">
+        <form onSubmit={onSubmitHandler} className="form">
+            <div className="textbox">
                 <input type="name" required ref={nameRef}/>
                 <label>Name</label>
             </div>
-            <div class="textbox">
+            <div className="textbox">
                 <input type="email" required ref={emailRef}/>
                 <label>Email</label>
             </div>
-            <div class="textbox">
+            <div className="textbox">
                 <input type="password" required ref={passwordRef}/>
                 <label>Password</label>
             </div>
             <button disabled={loading} type="submit">
                 Register
             </button>
-            <p class="reg-form">
+            <p className="reg-form">
               Already have an account?<Link to={'/'}> Login</Link>
             </p>
           </form>

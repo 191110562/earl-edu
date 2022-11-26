@@ -1,13 +1,13 @@
 import React from 'react'
-import Signin from '../components/Signin'
+import ForgotPassword from '../components/ForgotPassword'
 
-export default function SigninPage() {
+export default function ForgotPasswordPage() {
   return (
     <div className="container-main">
             <div className="card-main">
                 <div className="left"></div>
                 <div className="right">
-                    <Signin/>
+                    <ForgotPassword/>
                 </div>
         </div>
     </div>
