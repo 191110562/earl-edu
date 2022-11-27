@@ -57,32 +57,36 @@ export default function BoopButton() {
 
     return (
         <div className="alphabet-container">
-            <button onClick={A1}>A</button>
-            <button onClick={B1}>B</button>
-            <button onClick={C1}>C</button>
-            <button onClick={D1}>D</button>
-            <button onClick={E1}>E</button>
-            <button onClick={F1}>F</button>
-            <button onClick={G1}>G</button>
-            <button onClick={H1}>H</button>
-            <button onClick={I1}>I</button>
-            <button onClick={J1}>J</button>
-            <button onClick={K1}>K</button>
-            <button onClick={L1}>L</button>
-            <button onClick={M1}>M</button>
-            <button onClick={N1}>N</button>
-            <button onClick={O1}>O</button>
-            <button onClick={P1}>P</button>
-            <button onClick={Q1}>Q</button>
-            <button onClick={R1}>R</button>
-            <button onClick={S1}>S</button>
-            <button onClick={T1}>T</button>
-            <button onClick={U1}>U</button>
-            <button onClick={V1}>V</button>
-            <button onClick={W1}>W</button>
-            <button onClick={X1}>X</button>
-            <button onClick={Y1}>Y</button>
-            <button onClick={Z1}>Z</button>
+            <h1>Click to learn alphabets!</h1>
+            <h3>Listen carefully, and also pronouce it!</h3>
+            <div className="alphabet-container__button">
+                <button onClick={A1}>A</button>
+                <button onClick={B1}>B</button>
+                <button onClick={C1}>C</button>
+                <button onClick={D1}>D</button>
+                <button onClick={E1}>E</button>
+                <button onClick={F1}>F</button>
+                <button onClick={G1}>G</button>
+                <button onClick={H1}>H</button>
+                <button onClick={I1}>I</button>
+                <button onClick={J1}>J</button>
+                <button onClick={K1}>K</button>
+                <button onClick={L1}>L</button>
+                <button onClick={M1}>M</button>
+                <button onClick={N1}>N</button>
+                <button onClick={O1}>O</button>
+                <button onClick={P1}>P</button>
+                <button onClick={Q1}>Q</button>
+                <button onClick={R1}>R</button>
+                <button onClick={S1}>S</button>
+                <button onClick={T1}>T</button>
+                <button onClick={U1}>U</button>
+                <button onClick={V1}>V</button>
+                <button onClick={W1}>W</button>
+                <button onClick={X1}>X</button>
+                <button onClick={Y1}>Y</button>
+                <button onClick={Z1}>Z</button>
+            </div>
         </div>
     )
   };

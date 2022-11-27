@@ -27,7 +27,6 @@ export default function Signin() {
   return (
     <div className="tittle-login">
       <h1>Login</h1>
-      {currentUser && currentUser.email}
       {error && <p>{error}</p>}
       <div className="formbox">
         <form onSubmit={onSubmitHandler} className="form">
