@@ -23,6 +23,7 @@ export default function Navigation() {
         <ul>
             <h1>EarlEdu</h1>
             <li className='push'><NavLink to='/home'>Home</NavLink></li>
+            <li><NavLink to='/community'>Community</NavLink></li>
             <li><NavLink to='/baby-name-finder'>Baby Name Finder</NavLink></li>
             <li><NavLink to='/learn-alphabet'>Learn Alphabet</NavLink></li>
             <p>{currentUser && currentUser.email}</p>

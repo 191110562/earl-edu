@@ -9,6 +9,7 @@ import ForgotPasswordPage from '../pages/ForgotPasswordPage';
 import Navigation from './Navigation';
 import LearnAlphabetPage from '../pages/LearnAlphabetPage';
 import BabyNameFinderPage from '../pages/BabyNameFinderPage';
+import Community from './Community';
 
 function App() {
   return(
@@ -18,11 +19,12 @@ function App() {
         <Route path='/' element={<SigninPage/>} />
         <Route path='/register' element={<SignupPage/>} />
         <Route path='/forgot-password' element={<ForgotPasswordPage/>} />
+        <Route path='/home' element={<Home />} />
         <Route 
-          path='/home' 
+          path='/community' 
           element={
             <ProtectedRoute>
-              <Home/>
+              <Community/>
             </ProtectedRoute>
           }
         />

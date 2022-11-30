@@ -5,7 +5,7 @@ import { useAuthContext } from "../contexts/AuthContext";
 export default function Signin() {
   const emailRef = useRef()
   const passwordRef = useRef()
-  const { signinEmail, currentUser } = useAuthContext()
+  const { signinEmail } = useAuthContext()
   const [error, setError] = useState('')
   const [loading, setLoading] = useState(false)
   const navigate = useNavigate()
