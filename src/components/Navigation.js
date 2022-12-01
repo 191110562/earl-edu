@@ -23,25 +23,13 @@ export default function Navigation() {
   }
   return (
     <Navbar bg="transparent" variant="transparent">
-        <Container>
+        <Container className='navbar'>
           <Navbar.Brand href="/home">EarlEdu</Navbar.Brand>
           <Nav className="ms-auto responsive-font">
-            <Nav.Link onClick={(e) => {
-              e.preventDefault();
-              navigate("/home");
-            }}>Home</Nav.Link>
-            <Nav.Link onClick={(e) => {
-              e.preventDefault();
-              navigate("/community");
-            }}>Community</Nav.Link>
-            <Nav.Link onClick={(e) => {
-              e.preventDefault();
-              navigate("/baby-name-finder");
-            }}>Name Finder</Nav.Link>
-            <Nav.Link onClick={(e) => {
-              e.preventDefault();
-              navigate("/learn-alphabet");
-            }}>Learn Alphabet</Nav.Link>
+            <Nav.Link as={NavLink} to='/home'>Home</Nav.Link>
+            <Nav.Link as={NavLink} to='/community'>Community</Nav.Link>
+            <Nav.Link as={NavLink} to='baby-name-finder'>Name Finder</Nav.Link>
+            <Nav.Link as={NavLink} to='learn-alphabet'>Learn Alphabet</Nav.Link>
             <p className='p-nav'>{currentUser && currentUser.email}</p>
             <button className='button-trans' onClick={onLogoutHandler}><FiLogOut/></button>
           </Nav>
