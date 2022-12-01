@@ -30,18 +30,18 @@ export default function Signin() {
       {error && <p>{error}</p>}
       <div className="formbox">
         <form onSubmit={onSubmitHandler} className="form">
-            <div className="textbox">
+            <div className="textbox-login">
                 <input type="email" required ref={emailRef}/>
                 <label>Email</label>
             </div>
-            <div className="textbox">
+            <div className="textbox-login">
                 <input type="password" required ref={passwordRef}/>
                 <label>Password</label>
             </div>
             <p id="forgot">
                 <Link to='/forgot-password'>Forgot Password?</Link>
             </p>
-            <button disabled={loading} type="submit">
+            <button disabled={loading} type="submit" className="button-login">
                 Login
             </button>
             <p className="reg-form">

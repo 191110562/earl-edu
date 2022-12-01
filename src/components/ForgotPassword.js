@@ -32,14 +32,14 @@ export default function Signin() {
       {message && <p>{message}</p>}
       <div className="formbox">
         <form onSubmit={onSubmitHandler} className="form">
-            <div className="textbox">
+            <div className="textbox-login reset-position">
                 <input type="email" required ref={emailRef}/>
                 <label>Email</label>
             </div>
-            <button disabled={loading} type="submit">
+            <button disabled={loading} type="submit" className="button-login">
                 Reset Password
             </button>
-            <p className="forgot">
+            <p className="forgot reset-position">
                 <Link to='/'>Login</Link>
             </p>
             <p className="reg-form">

@@ -32,22 +32,22 @@ export default function Signup() {
       <h4>Let's Get Started! Please enter your details.</h4>
       <div className="formbox">
         <form onSubmit={onSubmitHandler} className="form">
-            <div className="textbox">
+            <div className="textbox-register">
                 <input type="name" required ref={nameRef}/>
                 <label>Name</label>
             </div>
-            <div className="textbox">
+            <div className="textbox-register">
                 <input type="email" required ref={emailRef}/>
                 <label>Email</label>
             </div>
-            <div className="textbox">
+            <div className="textbox-register">
                 <input type="password" required ref={passwordRef}/>
                 <label>Password</label>
             </div>
-            <button disabled={loading} type="submit">
+            <button disabled={loading} type="submit" className="button-register">
                 Register
             </button>
-            <p className="reg-form">
+            <p className="log-form">
               Already have an account?<Link to={'/'}> Login</Link>
             </p>
           </form>
