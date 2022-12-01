@@ -19,60 +19,44 @@ a{
 }
 
 /* Navigation */
-.navbar ul {
-    display: flex;
-    align-items: center;
-}
-   
-.navbar ul li {
-    display: inline-block;
-    padding: 16px;
+
+.p-nav {
+    margin-top: 7px;
+    margin-right: 10px;
 }
 
-.navbar ul li a {
-    font-size: 100%;
-    text-decoration: none;
-    color: black;
-}
-
-.navbar p {
-    font-weight: bold;
-}
-
-.navbar button {
-    font-size: 100%;
-    font-weight: bold;
+.button-trans {
     color: red;
-}
-
-.navbar ul li button {
     background-color: transparent;
     font-family: 'Inter', sans-serif;
     border: 0;
-    font-size: 28px;
     cursor: pointer;
     display: flex;
     align-items: center;
-    gap: 10px;
-  }
+    margin-bottom: 5px;
+    font-size: 20px;
+}
 
 .navbar .active {
     color: #000;
     font-weight: bold;
 }
 
-.navbar .push {
-    margin-left: auto;
-}
-
-.navbar h1 {
-    margin: 10px;
-    font-size: 35px;
-}
 
 @media only screen and (max-width: 600px){
-    .none-nav {
+    .responsive-font {
+        font-size: 14px;
+        text-align: center;
+        align-content: center;
+        align-items: center;
+    }
+
+    .p-nav {
         display: none;
+    }
+
+    .button-trans {
+        font-size: 18px;
     }
 }
 
@@ -246,7 +230,7 @@ input:focus ~  label {
 
 .formbox .form .reg-form {
     position: absolute;
-    margin-top: 260px;
+    margin-top: 270px;
 }
 
 @media only screen and (max-width: 600px){
