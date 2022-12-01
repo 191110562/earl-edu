@@ -14,6 +14,10 @@ body {
     background-repeat: no-repeat;
 }
 
+a{
+    text-decoration: none;
+}
+
 /* Navigation */
 .navbar ul {
     display: flex;
@@ -64,6 +68,12 @@ body {
 .navbar h1 {
     margin: 10px;
     font-size: 35px;
+}
+
+@media only screen and (max-width: 600px){
+    .none-nav {
+        display: none;
+    }
 }
 
 /* Sign in or Login Page */
@@ -141,7 +151,7 @@ body {
     font-size: 15px;
 }
 
-.formbox .form button, .formbox .form input {
+.formbox .form .button-login, .formbox .form input {
     border: 0;
     width: 100%;
     height: 60px;
@@ -158,13 +168,13 @@ body {
     margin-right: 40px;
 }
 
-.textbox {
+.textbox-login {
     position: relative;
     box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.25);
     border-radius: 12px;
 }
 
-.textbox span {
+.textbox-login span {
     position: absolute;
     top: 54%;
     translate: 0 -50%;
@@ -174,7 +184,9 @@ body {
     color: rgb(255, 255, 255/96%);
 }
 
-.textbox input {
+
+
+.textbox-login input {
     padding: 0 24px 0 36px;
     border-bottom: 20x solid #2b3442;
     color: rgb(255, 255, 255/96%);
@@ -190,7 +202,7 @@ input:focus {
     color: rgb(255, 255, 255/96%);
 }
 
-.textbox label {
+.textbox-login label {
     position: absolute;
     top: 50%;
     left: 40px;
@@ -209,7 +221,7 @@ input:focus ~  label {
     color: rgb(70, 32, 117);
 }
 
-.formbox .form button {
+.formbox .form .button-login {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -230,6 +242,11 @@ input:focus ~  label {
 
 .form p {
     font-weight: bolder;
+}
+
+.formbox .form .reg-form {
+    position: absolute;
+    margin-top: 260px;
 }
 
 @media only screen and (max-width: 600px){
@@ -254,17 +271,24 @@ input:focus ~  label {
         padding-right: 10px;
     }
 
+    .reset-position {
+        position: relative;
+        margin-top: 100px;
+        bottom: -10px;
+    }
+
     .tittle-login h1 {
         position: absolute;
         left: 100px;
         right: 100px;
     }
 
-    .textbox {
+    .textbox-login {
         position: relative;
         margin-bottom: 2px;
-        margin-left: 110px;
+        margin-left: 42px;
         padding-left: 32px;
+        width: 78%;
     }
     
     .formbox .form {
@@ -276,22 +300,22 @@ input:focus ~  label {
         font-size: 14px;
     }
 
-    .textbox input {
-        padding: 0 120px 0 100px;
+    .textbox-login input {
+        padding: 0;
     }
 
-    .formbox .form button {
+    .formbox .form .button-login {
         position: absolute;
         margin-top: 280px;
-        width: 70%;
-        margin-left: 110px;
+        width: 78%;
+        right: 30px;
         font-size: 14px;
     }
 
     .formbox .form .reg-form {
         position: absolute;
         margin-top: 350px;
-        margin-left: 110px;
+        margin-left: 40px;
     }
 }
 
@@ -326,6 +350,7 @@ input:focus ~  label {
     color: #787878;
     font-weight: lighter;
     font-size: 14px;
+    margin-bottom: 70px;
 }
 
 /* blur desain */
@@ -375,7 +400,7 @@ input:focus ~  label {
     font-size: 15px;
 }
 
-.formbox .form button, .formbox .form input {
+.formbox .form .button-register, .formbox .form input {
     border: 0;
     width: 98%;
     height: 60px;
@@ -393,7 +418,7 @@ input:focus ~  label {
     margin-right: 40px;
 }
 
-.textbox {
+.textbox-register {
     position: relative;
     margin-bottom: 2px;
     margin-left: 10px;
@@ -401,10 +426,10 @@ input:focus ~  label {
     box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.25);
     border-radius: 12px;
     padding: 0 20px;
-    height: 40px;
+    height: 90%;
 }
 
-.textbox span {
+.textbox-register span {
     position: absolute;
     top: 54%;
     translate: 0 -50%;
@@ -414,8 +439,8 @@ input:focus ~  label {
     color: rgb(255, 255, 255/96%);
 }
 
-.textbox input {
-    padding: 0 24px 18px 20px;
+.textbox-register input {
+    padding: 20px 24px 18px 20px;
     border-bottom: 20x solid #2b3442;
     color: rgb(255, 255, 255/96%);
     height: 72px;
@@ -429,7 +454,7 @@ input:focus {
     color: rgb(255, 255, 255/96%);
 }
 
-.textbox label {
+.textbox-register label {
     position: absolute;
     top: 50%;
     left: 40px;
@@ -449,7 +474,7 @@ input:focus ~  label {
     color: rgb(70, 32, 117);
 }
 
-.formbox .form button {
+.formbox .form .button-register {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -463,8 +488,9 @@ input:focus ~  label {
     height: 50px;
 }
 
-.formbox .form .reg-form {
-    margin-left: 10px;
+.formbox .form .log-form {
+    text-align: left;
+    margin-left: 12px;
 }
 
 .form #forgot a {
@@ -505,20 +531,22 @@ input:focus ~  label {
         position: absolute;
         left: 100px;
         right: 100px;
-        top: 110px;
-        font-size: 20px;
+        top: 140px;
+        font-size: 22px;
     }
 
     .tittle-register h4 {
         margin-top: 10px;
+        font-size: 14px;
     }
 
-    .textbox {
+    .textbox-register {
         position: relative;
         margin-bottom: 2px;
-        margin-left: 110px;
+        margin-left: 50px;
         padding-left: 32px;
-        width: 65%;
+        bottom: 120px;
+        width: 72%;
     }
     
     .formbox .form {
@@ -529,23 +557,28 @@ input:focus ~  label {
         font-size: 14px;
     }
 
-    .textbox input {
-        padding: 0 120px 0 100px;
+    .textbox-register input {
+        position: relative;
+        padding: 0;
     }
 
-    .formbox .form button {
+    .formbox .form .button-register {
         position: absolute;
-        margin-top: 300px;
-        width: 65%;
-        margin-left: 110px;
+        margin-top: 200px;
+        width: 72%;
+        margin-left: 50px;
         font-size: 14px;
     }
 
-    .formbox .form .reg-form {
+    .formbox .form .log-form {
         position: absolute;
-        margin-top: 355px;
-        margin-left: 110px;
+        margin-top: 260px;
+        margin-left: 50px;
         font-size: 13px;
+    }
+
+    .form #forgot a {
+        margin-right: 20px;
     }
 }
 
