@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
 * {
     box-sizing: border-box;
     font-family: 'Poppins', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -14,9 +13,10 @@ body {
     background-repeat: no-repeat;
 }
 
-a{
+a {
     text-decoration: none;
 }
+
 
 /* Navigation */
 
@@ -42,25 +42,24 @@ a{
     font-weight: bold;
 }
 
-
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 600px) {
     .responsive-font {
         font-size: 14px;
         text-align: center;
         align-content: center;
         align-items: center;
     }
-
     .p-nav {
         display: none;
     }
-
     .button-trans {
         font-size: 18px;
     }
 }
 
+
 /* Sign in or Login Page */
+
 .container-main {
     margin-top: 50px;
 }
@@ -87,6 +86,7 @@ a{
     margin-top: 30px;
 }
 
+
 /* blur desain */
 
 .blurr {
@@ -98,6 +98,7 @@ a{
     background: rgba(171, 129, 222, 0.35);
     filter: blur(150px);
 }
+
 
 /* blur desain */
 
@@ -127,7 +128,6 @@ a{
     color: #000000;
 }
 
-
 .card-main .right {
     float: right;
     width: 65%;
@@ -135,7 +135,8 @@ a{
     font-size: 15px;
 }
 
-.formbox .form .button-login, .formbox .form input {
+.formbox .form .button-login,
+.formbox .form input {
     border: 0;
     width: 100%;
     height: 60px;
@@ -168,8 +169,6 @@ a{
     color: rgb(255, 255, 255/96%);
 }
 
-
-
 .textbox-login input {
     padding: 0 24px 0 36px;
     border-bottom: 20x solid #2b3442;
@@ -177,12 +176,12 @@ a{
     height: 72px;
 }
 
-
 input:focus {
     border-color: rgb(107, 61, 163);
 }
 
-:is(input:focus, input:valid) ~ span {
+:is(input:focus,
+input:valid)~span {
     color: rgb(255, 255, 255/96%);
 }
 
@@ -196,12 +195,13 @@ input:focus {
     transition: 0.4s;
 }
 
-:is(input:focus, input:valid) ~ label {
+:is(input:focus,
+input:valid)~label {
     translate: -40px -40px;
     scale: 0.875;
 }
 
-input:focus ~  label {
+input:focus~label {
     color: rgb(70, 32, 117);
 }
 
@@ -218,7 +218,7 @@ input:focus ~  label {
     font-weight: 600;
 }
 
-.form #forgot{
+.form #forgot {
     text-align: right;
     padding-right: 10px;
     font-size: 13px;
@@ -233,12 +233,11 @@ input:focus ~  label {
     margin-top: 270px;
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 600px) {
     .card-main .btn-back {
         left: 70px;
         bottom: 740px;
     }
-
     .card-main .left {
         height: 500px;
         background: rgb(255, 255, 255);
@@ -250,23 +249,19 @@ input:focus ~  label {
         height: 400px;
         box-sizing: border-box;
     }
-
     .formbox {
         padding-right: 10px;
     }
-
     .reset-position {
         position: relative;
         margin-top: 100px;
         bottom: -10px;
     }
-
     .tittle-login h1 {
         position: absolute;
         left: 100px;
         right: 100px;
     }
-
     .textbox-login {
         position: relative;
         margin-bottom: 2px;
@@ -274,7 +269,6 @@ input:focus ~  label {
         padding-left: 32px;
         width: 78%;
     }
-    
     .formbox .form {
         position: absolute;
         display: grid;
@@ -283,11 +277,9 @@ input:focus ~  label {
         right: 40px;
         font-size: 14px;
     }
-
     .textbox-login input {
         padding: 0;
     }
-
     .formbox .form .button-login {
         position: absolute;
         margin-top: 280px;
@@ -295,7 +287,6 @@ input:focus ~  label {
         right: 30px;
         font-size: 14px;
     }
-
     .formbox .form .reg-form {
         position: absolute;
         margin-top: 350px;
@@ -303,7 +294,9 @@ input:focus ~  label {
     }
 }
 
+
 /* Sign up or Register Page */
+
 .container-main {
     margin-top: 50px;
 }
@@ -337,6 +330,7 @@ input:focus ~  label {
     margin-bottom: 70px;
 }
 
+
 /* blur desain */
 
 .blurr {
@@ -348,6 +342,7 @@ input:focus ~  label {
     background: rgba(171, 129, 222, 0.35);
     filter: blur(150px);
 }
+
 
 /* blur desain */
 
@@ -384,7 +379,8 @@ input:focus ~  label {
     font-size: 15px;
 }
 
-.formbox .form .button-register, .formbox .form input {
+.formbox .form .button-register,
+.formbox .form input {
     border: 0;
     width: 98%;
     height: 60px;
@@ -434,7 +430,8 @@ input:focus {
     border-color: rgb(107, 61, 163);
 }
 
-:is(input:focus, input:valid) ~ span {
+:is(input:focus,
+input:valid)~span {
     color: rgb(255, 255, 255/96%);
 }
 
@@ -449,12 +446,13 @@ input:focus {
     font-size: 14px;
 }
 
-:is(input:focus, input:valid) ~ label {
+:is(input:focus,
+input:valid)~label {
     translate: -40px -40px;
     scale: 0.875;
 }
 
-input:focus ~  label {
+input:focus~label {
     color: rgb(70, 32, 117);
 }
 
@@ -487,13 +485,12 @@ input:focus ~  label {
     font-size: 14px;
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 600px) {
     .card-main .btn-back {
         left: 70px;
         bottom: 740px;
         font-size: 30px;
     }
-
     .card-main .left {
         width: 0%;
         height: 500px;
@@ -506,11 +503,9 @@ input:focus ~  label {
         height: 400px;
         box-sizing: border-box;
     }
-
     .formbox {
         padding-right: 10px;
     }
-
     .tittle-register h1 {
         position: absolute;
         left: 100px;
@@ -518,12 +513,10 @@ input:focus ~  label {
         top: 140px;
         font-size: 22px;
     }
-
     .tittle-register h4 {
         margin-top: 10px;
         font-size: 14px;
     }
-
     .textbox-register {
         position: relative;
         margin-bottom: 2px;
@@ -532,7 +525,6 @@ input:focus ~  label {
         bottom: 120px;
         width: 72%;
     }
-    
     .formbox .form {
         position: absolute;
         display: grid;
@@ -540,12 +532,10 @@ input:focus ~  label {
         right: 10px;
         font-size: 14px;
     }
-
     .textbox-register input {
         position: relative;
         padding: 0;
     }
-
     .formbox .form .button-register {
         position: absolute;
         margin-top: 200px;
@@ -553,25 +543,26 @@ input:focus ~  label {
         margin-left: 50px;
         font-size: 14px;
     }
-
     .formbox .form .log-form {
         position: absolute;
         margin-top: 260px;
         margin-left: 50px;
         font-size: 13px;
     }
-
     .form #forgot a {
         margin-right: 20px;
     }
 }
 
+
 /* Learn Alphabet */
+
 .alphabet-container {
     text-align: center;
 }
 
-.alphabet-container h1,h3{
+.alphabet-container h1,
+h3 {
     margin-top: 2%;
 }
 
@@ -588,7 +579,7 @@ input:focus ~  label {
     margin: 10px;
     background: linear-gradient(90.51deg, rgba(171, 129, 222, 0.7) 2.2%, #EE8FE4 87.81%);
     color: #f9f9f9;
-    box-shadow: 1px 1px 4px 0px rgba(0,0,0,0.2);
+    box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     border: 0;
     font-weight: 600;
@@ -596,13 +587,15 @@ input:focus ~  label {
     border-radius: 6px;
 }
 
+
 /* BabyFinderName */
-.baby-name-finder-container h1{
+
+.baby-name-finder-container h1 {
     text-align: center;
     font-size: 35px;
 }
 
-.baby-name-finder-container h3{
+.baby-name-finder-container h3 {
     margin-top: 2%;
     text-align: center;
 }
@@ -644,18 +637,17 @@ input:focus ~  label {
     text-align: center;
 }
 
-.baby-name-finder-category__list  ul {
+.baby-name-finder-category__list ul {
     margin-top: 2%;
     text-align: center;
 }
 
-   
 .baby-name-finder-category__list ul li {
     display: inline-block;
     padding: 16px;
 }
 
-.baby-name-finder-category__list  li {
+.baby-name-finder-category__list li {
     width: 200px;
     margin: 10px;
     margin-bottom: 18px;
@@ -665,3 +657,167 @@ input:focus ~  label {
     border-radius: 12px;
     overflow: hidden;
 }
+
+/*header*/
+
+.container-header {
+    padding-top: 10px;
+  }
+  
+  .container-header .left {
+    float: left;
+    width: 55%;
+    height: 500px;
+    padding-top: 50px;
+  }
+  
+  .container-header .left #judul {
+    font-size: 64px;
+    margin-left: 80px;
+  }
+  
+  .container-header .left #isi {
+    font-size: 16px;
+    margin: 50px 0 0 140px;
+    color: #787878;
+    width: 640px;
+    height: 49px;
+  }
+  
+  .container-header .right {
+    float: right;
+    width: 45%;
+    box-sizing: border-box;
+    font-size: 15px;
+  }
+  
+  .right img {
+    width: 280px;
+    background: linear-gradient(
+      214.59deg,
+      rgba(168, 83, 248, 0.904) -2.54%,
+      rgba(78, 192, 245, 0.267) 104.77%
+    );
+    backdrop-filter: blur(25px);
+    /* Note: backdrop-filter has minimal browser support */
+  
+    border-radius: 40px;
+    margin: 50px 0 0 100px;
+  }
+  
+  .right #design {
+    position: absolute;
+    left: 845px;
+    height: 430px;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .container-header .left #judul {
+      font-size: 45px;
+      margin-left: 20px;
+    }
+  
+    .container-header .left #isi {
+      font-size: 14px;
+      margin: 20px 0 0 27px;
+      color: #787878;
+      width: 350px;
+      height: 49px;
+      text-align: justify;
+    }
+  
+    .right img {
+      width: 0px;
+      background: purple;
+      backdrop-filter: blur(25px);
+      /* Note: backdrop-filter has minimal browser support */
+  
+      border-radius: 40px;
+      margin: 50px 0 0 100px;
+    }
+  }
+  
+  /* blur desain */
+  
+  .blurr {
+    position: absolute;
+    width: 433px;
+    height: 405px;
+    left: 1091px;
+    top: -9px;
+    background: rgba(171, 129, 222, 0.35);
+    filter: blur(150px);
+  }
+  
+  /* blur desain */
+  
+  /* community-links */
+  .community-links {
+    padding-top: 600px;
+    padding-bottom: 200px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1 15px;
+  }
+  
+  .community-links h1 {
+    font-size: 32px;
+    font-weight: bolder;
+    color: #ffffff;
+  }
+  
+  .card a img {
+    width: 40px;
+    margin: 20px 0px 0 15px;
+  }
+  
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .wrapper .card {
+    max-width: 300px;
+    background: #ffffff;
+    padding: 0px;
+    border-radius: 10px;
+    margin: 40px;
+    box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.25);
+  }
+  
+  .wrapper .card img {
+    float: left;
+    background: rgb(253, 253, 253);
+    border-radius: 10px 0px 0px 10px;
+    margin-right: 10px;
+  }
+  
+  .wrapper .card article {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.05em;
+    line-height: 1;
+    color: #787878;
+    padding: 11px;
+  }
+  
+  .wrapper .card #judul {
+    font-weight: bolder;
+    color: #000000;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .container-feature {
+      margin-top: 50px;
+      padding-top: 500px;
+    }
+    .wrapper .card img {
+      margin-right: 5px;
+    }
+    .wrapper {
+        position: absolute;
+        top: 350px;
+    }
+  }
