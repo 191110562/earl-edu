@@ -1,52 +1,56 @@
 import React, { useRef, useState } from "react";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import { useAuthContext } from "../contexts/AuthContext";
+import Navigation from "./Navigation";
 
 export default function Signin() {
-  const emailRef = useRef()
-  const { forgetPassword } = useAuthContext()
-  const [error, setError] = useState('')
-  const [message, setMessage] = useState('')
-  const [loading, setLoading] = useState(false)
+  const emailRef = useRef();
+  const { forgetPassword } = useAuthContext();
+  const [error, setError] = useState("");
+  const [message, setMessage] = useState("");
+  const [loading, setLoading] = useState(false);
 
   async function onSubmitHandler(e) {
-    e.preventDefault()
+    e.preventDefault();
 
     try {
-    setMessage('')
-      setError("")
-      setLoading(true)
-      await forgetPassword(emailRef.current.value)
-      setMessage('Check your inbox mail for further instructions.')
+      setMessage("");
+      setError("");
+      setLoading(true);
+      await forgetPassword(emailRef.current.value);
+      setMessage("Check your inbox mail for further instructions.");
     } catch {
-      setError("Failed to reset password")
+      setError("Failed to reset password");
     }
 
-    setLoading(false)
+    setLoading(false);
   }
 
   return (
-    <div className="tittle-login">
-      <h1>Password Reset</h1>
-      {error && <p>{error}</p>}
-      {message && <p>{message}</p>}
-      <div className="formbox">
-        <form onSubmit={onSubmitHandler} className="form">
+    <div>
+      <Navigation />
+      <div className="tittle-login">
+        <h1>Password Reset</h1>
+        {error && <p>{error}</p>}
+        {message && <p>{message}</p>}
+        <div className="formbox">
+          <form onSubmit={onSubmitHandler} className="form">
             <div className="textbox-login reset-position">
-                <input type="email" required ref={emailRef}/>
-                <label>Email</label>
+              <input type="email" required ref={emailRef} />
+              <label>Email</label>
             </div>
             <button disabled={loading} type="submit" className="button-login">
-                Reset Password
+              Reset Password
             </button>
             <p className="forgot reset-position">
-                <Link to='/'>Login</Link>
+              <Link to="/">Login</Link>
             </p>
             <p className="reg-form">
-              Don't have an account?<Link to='/register'> Register</Link>
+              Don't have an account?<Link to="/register"> Register</Link>
             </p>
-        </form>
+          </form>
+        </div>
       </div>
     </div>
   );
-};
+}
