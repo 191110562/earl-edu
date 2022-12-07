@@ -5,7 +5,6 @@ function CommunityPage() {
     <>
       <header>
         <div className="container-header">
-          <div className="blurr"></div>
           <div className="left">
             <h1 id="judul">Community</h1>
             <p id="isi">

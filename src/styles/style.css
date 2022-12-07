@@ -790,7 +790,7 @@ h3 {
     float: left;
     background: rgb(253, 253, 253);
     border-radius: 10px 0px 0px 10px;
-    margin-right: 10px;
+
   }
   
   .wrapper .card article {
@@ -813,17 +813,14 @@ h3 {
       margin-top: 50px;
       padding-top: 500px;
     }
-    .wrapper .card img {
-      margin-right: 5px;
-    }
     .wrapper {
         position: absolute;
         top: 350px;
     }
   }
 
-  /*header*/
 
+/* HomePage */
 .container-header {
     padding-top: 92px;
 }
@@ -853,7 +850,7 @@ h3 {
 
 .column-header article #isi {
     font-style: normal;
-    font-weight: 500;
+    font-weight: bolder;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.05em;
@@ -864,7 +861,7 @@ h3 {
 .container-header #line-img {
     margin-top: 43px;
     position: absolute;
-    width: 1535px;
+    width: 100%;
     left: -1px;
     top: 643px;
     background: rgba(111, 45, 189, 0.73);
@@ -928,6 +925,9 @@ h3 {
 
 .wrapper .card{
     max-width: 300px;
+    width: 80%;
+    height: 80%;
+    align-items: center;
     background: #FFFFFF;;
     padding: 0px;
     border-radius: 10px;
@@ -937,28 +937,26 @@ h3 {
 }
 
 .wrapper .card img {
-    float: left;
-    background: rgba(171, 129, 222, 0.35);
-    border-radius: 10px 0px 0px 10px;
-    margin-right: 10px;
+    width: 40%;
+    height: 40%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    border-radius: 10px;
 }
 
-.wrapper .card article{
+.wrapper .card p{
+    text-align: center;
     font-weight: 500;
     font-size: 14px;
     line-height: 21px;
     letter-spacing: 0.05em;
     line-height: 1.5;
     color: #787878;
-    padding: 17px;
 }
 
 @media screen and (max-width: 600px) {
     .container-feature {
         margin-top: 50px;
-    }
-    .wrapper .card img {
-        margin-right: 5px;
     }
 }
 
@@ -988,9 +986,6 @@ h3 {
     padding: 0 10px;
 }
 
-.container-team .row {
-    margin: 0 -100px;
-}
 
 .container-team .row:after {
     content: "";
@@ -1001,6 +996,12 @@ h3 {
 .column-team .card {
     padding: 16px;
     text-align: center;
+    height: 100%;
+}
+
+.column-team .card img {
+    width: 100%;
+    height: 350px;
 }
 
 .column-team .card img article {

@@ -1,12 +1,9 @@
 import React from "react";
-import { useAuthContext } from "../contexts/AuthContext";
+import { Link } from "react-router-dom";
 
 export default function Home() {
-  const { currentUser } = useAuthContext()
-
   return (
     <div>
-      {currentUser && currentUser.email}
       <div className="container-header">
             <div className="row">
                 <div className="column-header">
@@ -15,8 +12,8 @@ export default function Home() {
                 </div>
                 <div className="column-header">
                     <article>
-                        <h2 id="judul">The best gift a parent can give children is time</h2>
-                        <p id="isi">EarlEdu adalah aplikasi lorem Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+                        <h2 id="judul"> Welcome to EarlEdu! <br></br>The best gift a parent can give children is time!</h2>
+                        <h2 id="isi">EarlEdu is ready to help parents in nurturing their loved ones!</h2>
                     </article>
                 </div>
             </div>
@@ -25,17 +22,35 @@ export default function Home() {
             <div className="container-feature" id="features">
             <h1>FEATURES</h1>
             <div className="wrapper">
-                <div className="card">
-                    <img src="./img/logofeature-img.svg" alt="logofeature"/>
-                    <article>Lorem ipsum dolor sit amet, veniam,</article>
+                <div className="card-community">
+                    <Link to="/community">
+                        <div className="card">
+                            <img src="./img/home-community.svg" alt="logofeature"/>
+                            <h3>Community</h3>
+                            <p>Come join the community!</p>
+                            <p>The community is ready to help on solving your problems!</p>
+                        </div>
+                    </Link>
                 </div>
-                <div className="card">
-                    <img src="./img/logofeature-img.svg" alt="logofeature"/>
-                    <article>Lorem ipsum dolor sit amet, veniam,</article>
+                <div className="card-finder">
+                    <Link to="/baby-name-finder">
+                        <div className="card">
+                            <img src="./img/home-babyname.svg" alt="logofeature"/>
+                            <h3>Baby Name Finder</h3>
+                            <p>Confused about naming your loved ones?</p>
+                            <p>Come and try out as many names as you'd like!</p>
+                        </div>
+                    </Link>
                 </div>
-                <div className="card">
-                    <img src="./img/logofeature-img.svg" alt="logofeature"/>
-                    <article>Lorem ipsum dolor sit amet, veniam,</article>
+                <div className="card-alphabet">
+                    <Link to="/learn-alphabet">
+                        <div className="card">
+                            <img src="./img/home-abc.svg" alt="logofeature"/>
+                            <h3>Learn Alphabet</h3>
+                            <p>Come and learn alphabets!</p>
+                            <p>Click on the alphabet and pronounce it together!</p>
+                        </div>
+                    </Link>
                 </div>
             </div>
         </div>
@@ -48,30 +63,30 @@ export default function Home() {
             <div className="row">
                 <div className="column-team" id="container-team">
                     <div className="card">
-                        <img src="./img/ourteam-img.svg" alt="ourteam-img"/>
-                        <article>Hilman Habib</article>
-                        <article>Surabaya</article>
+                        <img src="./img/michelle.jpg" alt="ourteam-img"/>
+                        <article>Michelle</article>
+                        <article>Universitas Mikroskil</article>
                     </div>
                 </div>
                 <div className="column-team">
                     <div className="card">
-                        <img src="./img/ourteam-img.svg" alt="ourteam-img"/>
-                        <article>Hilman Habib</article>
-                        <article>Surabaya</article>
+                        <img src="./img/ahmadray.jpg" alt="ourteam-img"/>
+                        <article>Ahmad Ray Septa Firdaus</article>
+                        <article>Universitas Singaperbangsa Karawang</article>
                     </div>
                 </div>
                 <div className="column-team">
                     <div className="card">
-                        <img src="./img/ourteam-img.svg" alt="ourteam-img"/>
-                        <article>Hilman Habib</article>
-                        <article>Surabaya</article>
+                        <img src="./img/habib.jpg" alt="ourteam-img"/>
+                        <article>Muhammad Hilman Habib Habibi</article>
+                        <article>Universitas Pembangunan Nasional Veteran Jawa Timur</article>
                     </div>
                 </div>
                 <div className="column-team">
                     <div className="card">
-                        <img src="./img/ourteam-img.svg" alt="ourteam-img"/>
-                        <article>Hilman Habib</article>
-                        <article>Surabaya</article>
+                        <img src="./img/belia.jpg" alt="ourteam-img"/>
+                        <article>Belia Rizki Nurapriyani</article>
+                        <article>Universitas Kuningan</article>
                     </div>
                 </div>
             </div>
