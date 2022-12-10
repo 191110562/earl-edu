@@ -77,7 +77,7 @@ export default function Home() {
                 </div>
                 <div className="column-team">
                     <div className="card">
-                        <img src="./img/habib.JPG" alt="ourteam-img"/>
+                        <img src="./img/habib.jpg" alt="ourteam-img"/>
                         <article>Muhammad Hilman Habib Habibi</article>
                         <article>Universitas Pembangunan Nasional Veteran Jawa Timur</article>
                     </div>
