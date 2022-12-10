@@ -228,10 +228,6 @@ input:focus~label {
     font-weight: bolder;
 }
 
-.formbox .form .reg-form {
-    position: absolute;
-    margin-top: 270px;
-}
 
 @media only screen and (max-width: 600px) {
     .card-main .btn-back {
