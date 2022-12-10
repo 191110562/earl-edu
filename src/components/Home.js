@@ -84,7 +84,7 @@ export default function Home() {
                 </div>
                 <div className="column-team">
                     <div className="card">
-                        <img src="./img/belia.png" alt="ourteam-img"/>
+                        <img src="./img/Belia.png" alt="ourteam-img"/>
                         <article>Belia Rizki Nurapriyani</article>
                         <article>Universitas Kuningan</article>
                     </div>
